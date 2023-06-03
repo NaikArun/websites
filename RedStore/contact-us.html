@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+    <!----------------------header section---------------------->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device=width, initinal-scale=1.0">
+        <title>All Products -RedStore </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body> 
+            <div class="container">
+                <div class="navbar">
+                    <div class="logo">
+                       <img src="images/logo.png" width="125px" >
+                    </div>
+                    <nav>
+                        <ul id="MenuItems">
+                            <li><a href="index.php">Home</a></li>
+                            <li><a href="products.php">Product</a></li>
+                            <li><a href="">logout</a></li>
+                            <li><a href="contact-us.php">Contact</a></li>
+                            <li><a href="account.php">Account</a></li>
+                        </ul>
+                    </nav>
+                    <img src="images/cart.png" width="30px" height="30px">
+                    <img src="images/menu.png" class="menu-icon" 
+                    onclick="menutroggle()">
+                </div>
+            </div>
+<!--contact us form-->
+        <div class="contact-page">
+            <div class="container">
+                <div class="row">
+                    <div class="col-2">
+                        <img src="images/image1.png" width="100%">
+                    </div>
+                    <div class="contactus-formbox">
+                        <div class="contact-title">
+                             <h1>HELLO</h1>
+                             <h2>we are always ready to serve you!</h2>
+                        </div>
+                         <div class="contact-form">
+                            <form id="contact-form" method="post" action="contact-form.php">
+   
+                                <input type="name" type="text" class="form-control" placeholder="your name" required> <br>
+   
+                                <input type="email" type="email" class="form-control" placeholder="your email" required> <br>
+   
+                                <textarea name="message" class="form-control" placeholder="message" row="3" required></textarea><br>
+   
+                                <input type="submit" class="submit1" value="SEND MESSAGE">
+                            </form>
+                       </div>
+                    
+                    
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-------js for troggle menu------->
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight ="0px";
+    function menutroggle(){
+        if(MenuItems.style.maxHeight =="0px")
+            {
+               MenuItems.style.maxHeight ="200px";
+            }
+        else
+            {
+               MenuItems.style.maxHeight ="0px";
+            }
+    }
+</script>
+
+    </body>
+</html>
